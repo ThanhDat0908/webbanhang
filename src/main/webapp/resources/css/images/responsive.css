@@ -1,0 +1,612 @@
+/***********************************************************
+
+1. CSS RESET
+
+2. VARIABLES
+2.1 GRADIENTS
+2.2 CSS3 TRANSITIONS
+
+3. GLOBAL THEME STYLES
+3.1 HOVERS
+
+4. TYPOGRAPHY
+4.1 HEADINGS
+4.2 PARAGRAPHS & LISTS
+4.3 LINKS
+4.4 PRODUCT ATTRIBUTES (name, description, price)
+4.5 RTE
+
+5. FORMS & COMPONENTS
+5.1 FORMS
+5.2 ALERTS
+5.3 BUTTONS
+
+6. GLOBAL PAGE LAYOUT
+
+7. SIDEBAR CONFIGURATION
+
+8. MAIN PAGE
+8.1 HEADER
+8.2 NAVIGATION
+8.3 NIVOSLIDER
+8.4 SHOWCASE
+8.5 MAIN PRODUCT LISTING
+8.6 FOOTER
+
+9. COLLECTION PAGES
+9.1 PAGES CONTENT
+9.2 BREADCRUMBS
+9.3 COLLECTION LISTING
+9.4 PAGINATION
+
+10. SIDEBAR WIDGETS
+10.1 LINKS LIST
+10.2 SIDEBAR PRODUCT LISTING
+
+11. SEARCH RESULTS PAGE
+
+12. PRODUCT PAGE
+12.1 PRODUCT IMAGES
+12.2 PRODUCT INFO
+12.3 PRODUCT PAGINATION
+12.4 RELATED PRODUCTS
+
+13. BLOG
+13.1 POSTS LISTING
+13.2 SINGLE POST
+
+14. CUSTOMER PAGES
+14.1 LOG IN
+14.2 ACCOUNT
+14.3 ADDRESSES
+14.4 ORDERS
+
+15. CART PAGE
+15.1 CART PRODUCTS
+15.2 GUEST CHECKOUT
+
+16. CONTACTS PAGE
+
+***********************************************************/
+
+
+
+/***************************************************************************
+                                1200px <
+***************************************************************************/
+
+@media (min-width: 1200px) {
+	
+
+
+}
+
+
+/***************************************************************************
+                                < 1200px
+***************************************************************************/
+
+@media (max-width: 1199px) {
+	
+/* 8.1 HEADER */
+.header_search {
+  	border: 1px solid #eaeaea;
+}
+.header_search form {
+  	border: 1px solid #eaeaea;
+}
+  
+.header_cart a {
+ 	border-radius: 0px 5px 0 0; 
+}
+  
+.header_search {
+ 	padding-top: 20px; 
+}
+
+/* 8.2 NAVIGATION */
+
+/* 8.4 SHOWCASE */
+.slider_wrap {
+  	min-height: 373px;
+}
+.header_search {
+  	width: 100%;
+  	padding-left: 20px;
+}
+  
+.nivo-caption p {
+ 	display: none; 
+}
+.nivo-caption {
+ 	padding: 19px 16px; 
+}
+  
+.custom_showcase h3 {
+ 	font-size: 18px; 
+}
+.product_listing_main .product_name,
+.product_listing_main .product_links {
+ 	float: none; 
+}
+.product_listing_main .product_price {
+ 	padding-top: 8px; 
+}
+  
+.custom_bottom .fb_iframe_widget {
+  	overflow: hidden;
+}	
+.custom_bottom1 .inside {
+    padding: 45px 1px 15px 16px;
+}
+	
+  
+/* 8.6 FOOTER */
+.contacts_phone {
+    font-size: 16px;
+}
+.contacts_phone a {
+    font-size: 16px;
+  	color: #566b78;
+  	vertical-align: baseline;
+}
+
+/* 8.5 MAIN PRODUCT LISTING */
+
+/* 10.2 SIDEBAR PRODUCT LISTING */
+.product_listing_sidebar .product {
+	text-align: center;
+}
+.product_listing_sidebar .product_img {
+	
+}
+
+
+
+/* 12.1 PRODUCT IMAGES */
+.product_img_big {
+	width: 279px;
+}
+.product_img_thumbs {
+	width: 279px;
+}
+.product_img_thumbs__list a {
+	width: 85px !important;
+}
+
+}
+
+
+
+/***************************************************************************
+                                < 980px
+***************************************************************************/
+
+@media (max-width: 992px) {
+	  
+.cart_popup {
+	top: 0 !important;
+}
+.column_center .page_heading, 
+.column .widget h3.widget_header {
+	padding: 14px 10px 18px;  
+}
+
+/* 8.1 HEADER */
+
+
+/* 8.2 NAVIGATION */
+#navigation.isStuck {
+	position: relative !important;
+	left: auto;
+	right: auto;
+  	box-shadow: none;
+  	background: none;
+}
+.pseudoStickyBlock {
+	display: none !important;
+}
+
+#navigation nav {
+    background: #ffffff;
+  	color: #000000;
+  	text-align: left;
+  	border-radius: 5px;
+}
+#navigation .jq-selectbox__select {
+	height: 30px;
+	padding: 0 30px 0 10px;
+}
+#navigation .jq-selectbox__select-text {
+	width: 100% !important;
+	height: 30px;
+	line-height: 30px;
+}
+#navigation .jq-selectbox__trigger i {
+	right: 9px;
+	top: 9px;
+}
+
+#navigation .jq-selectbox__dropdown {
+	width: 100% !important;
+	top: 28px !important;
+}
+#navigation .jq-selectbox__dropdown ul {
+	background: #ffffff;
+	border: 1px solid #eaeaea;
+	text-align: left;
+    padding: 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 13px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 5px 13px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 5px 13px;
+}
+#navigation .jq-selectbox__dropdown ul li + li {
+  	border-top: 1px dotted #eaeaea;
+}
+#navigation .jq-selectbox__dropdown ul li {
+    display: block;
+  	color: #909090;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 2px 0px;
+}
+#navigation .jq-selectbox__dropdown ul li:hover,
+  #navigation .jq-selectbox__dropdown ul li.sel {
+    	color: #f1a727;
+}
+
+
+
+/* 8.4 SHOWCASE */
+.slider_wrap {
+  	min-height: 288px;
+}
+
+.nivo-caption h2 {
+ 	font-size: 50px; 
+  	line-height: 1.3em;
+}
+.nivo-caption h4 {
+ 	font-size: 18px;
+  	line-height: 1.3em;
+}
+.nivo-caption {
+ 	padding: 19px 7px; 
+}
+  
+.custom_showcase h4 {
+ 	font-size: 12px; 
+}
+.custom_showcase .abs {
+ 	padding: 0 9px; 
+}
+.custom_showcase a .inside  {
+  	padding: 14px 45px 15px 12px;
+}
+  
+.custom_bottom1 .inside {
+    padding: 45px 16px 45px 16px;
+  	border-bottom: 1px solid #eaeaea;
+}
+.custom_bottom .fb_iframe_widget,
+.custom_bottom .fb_iframe_widget span,
+.custom_bottom .fb_iframe_widget iframe {
+  	width: 100% !important;
+}
+.custom_bottom2:before {
+ 	display:none; 
+}
+  
+/* 8.6 FOOTER */
+
+
+/* 8.5 MAIN PRODUCT LISTING */
+
+/* 10.2 SIDEBAR PRODUCT LISTING */
+
+/* 12.1 PRODUCT IMAGES */
+.product_image-additioanl {
+	width: 229px !important;
+}
+
+
+
+/* 12.1 PRODUCT IMAGES */
+.product_img_big {
+	width: 213px;
+}
+.product_img_thumbs {
+	width: 213px;
+}
+.product_img_thumbs__list a {
+	width: 63px !important;
+}
+
+.bx-wrapper .bx-prev {
+	left: 5px;
+}
+.bx-wrapper .bx-next {
+	right: 5px;
+}
+
+}
+
+
+
+/***************************************************************************
+                                < 767px
+***************************************************************************/
+
+@media (max-width: 767px) {
+	
+/* 6. GLOBAL PAGE LAYOUT */
+.container {
+	padding:0 15px;
+}
+
+.column_left,
+.column_right,
+.column_center,
+#main_content {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+
+
+/* 8.1 HEADER */
+#logo {
+ 	width: 100%;
+  	-webkit-box-sizing: border-box;
+  	box-sizing: border-box;
+  	padding-bottom: 10px;
+  	padding-left: 0px;
+  	border-bottom: 1px solid #eaeaea;
+  	text-align: center;
+}
+.header_user {
+ 	float: left;
+}
+.header_cart a {
+  	border-radius: 0px;
+}
+#navigation > div {
+ 	padding: 0px;
+}
+/* 8.2 NAVIGATION */
+
+/* 8.4 SHOWCASE */
+.slider_wrap {
+  	min-height: 0;
+}
+
+.nivo-caption h3 {
+ 	display: none; 
+}
+.nivo-caption .btn {
+ 	margin-top: 0px; 
+}
+.nivo-caption h2 {
+ 	font-size: 30px;
+  	line-height: 1em;
+}
+#showcase {
+ 	padding-bottom: 20px; 
+}
+  
+.product_img a {
+ 	border-bottom: 0px;
+}
+  
+.custom_bottom1 .inside,
+.custom_bottom2 .inside {
+ 	border: none;
+  	padding-bottom: 0px;
+}
+.custom_bottom3 .inside {
+ 	padding-left: 20px; 
+}
+.custom_bottom_wr {
+ 	padding-bottom: 30px; 
+}
+  
+.footer_block__3 {
+ 	clear: left; 
+}
+footer .copyright {
+ 	margin-top: 30px; 
+}
+  
+/* 8.6 FOOTER */
+.contacts_phone {
+    font-size: 25px;
+}
+
+/* 8.5 MAIN PRODUCT LISTING */
+.product_listing_main .product {
+	margin: 15px 0 0 0;
+}
+.product > div {
+	overflow: hidden;
+}
+
+.product_img {
+	width: 120px;
+	float: left;
+	margin: 0 15px 0 0;
+}
+.product .product_img {
+ 	padding: 5px; 
+}
+.product .product_img a {
+  	border: 1px solid #eaeaea; 
+}
+
+.product_img a {
+ 	padding: 10px; 
+}
+
+/* 10.2 SIDEBAR PRODUCT LISTING */
+.banner {
+ 	margin-top: 30px; 
+}
+.custom_bottom_wr {
+ 	margin-top: 5px; 
+}
+.product_listing_sidebar .product {
+	text-align: left;
+}
+.product_listing_related .product_price {
+  	clear: none;
+}
+
+
+/* 12.1 PRODUCT IMAGES */
+.product_img_big {
+	width: 288px;
+	margin: 0 auto;
+}
+.product_img_thumbs {
+	width: 288px;
+	margin: 0 auto;
+}
+.product_img_thumbs__list a {
+	width: 88px !important;
+}
+
+
+
+/* 12.2 PRODUCT INFO */
+.product_wrap .product_name {
+  	margin-top: 9px;
+}
+.column .widget.widget__types {
+  	margin-top: 30px;
+}
+.product_info {
+  	padding-top: 10px;
+}
+
+
+
+/* 15. CART PAGE */
+.cart_buttons {
+	text-align: center;
+}
+.cart_buttons span.or {
+	display: block;
+	margin: 5px 0;
+}
+
+}
+
+
+
+/***************************************************************************
+                                < 640px
+***************************************************************************/
+
+@media (max-width: 640px) {
+	
+.nivo-caption h4,
+.nivo-caption h2 {
+  	display: none;
+}
+.nivo-caption .btn {
+ 	float: right; 
+}
+.blog-article_meta-comments,
+.article_meta-comments {
+ 	float: none;
+  	padding-left: 0px;
+}
+.banner h3 {
+ 	background: -webkit-linear-gradient(none);
+  	-webkit-text-fill-color: #a88136; 
+}
+
+}
+
+
+
+/***************************************************************************
+                                < 480px
+***************************************************************************/
+
+@media (max-width: 480px) {
+	
+#logo {
+	 border-bottom: 0px;
+}
+.header_cart {
+ 	width: 100%;
+  	padding-bottom: 20px;
+  	border-bottom: 1px solid #eaeaea;
+}
+.header_cart a {
+  	margin: 0 15px;
+  	padding: 20px 10px 20px 23px;
+}
+.header_search {
+ 	padding: 20px 15px 20px; 
+}
+  
+.custom_bottom .fb_iframe_widget,
+.custom_bottom .fb_iframe_widget span,
+.custom_bottom .fb_iframe_widget iframe {
+  	height:320px !important;
+}
+.custom_bottom .inside {
+ 	padding-left: 0px; 
+  	padding-right: 0px; 
+}
+  
+.footer_block {
+ 	width: 100% !important; 
+}
+footer {
+ 	padding-top: 10px; 
+}
+
+/* 12.1 PRODUCT IMAGES */
+.product_wrap .product_image {
+	width: 290px;
+}
+.product_image-additioanl {
+	width: 306px !important;
+}
+.product_wrap #bx-pager a {
+	width: 87px;
+	margin-right: 15px;
+}
+
+
+
+/* 14.2 ACCOUNT */
+.customer_name .divider {
+	display: none;
+}
+.customer_name .email {
+	display: block;
+}
+.customer_name a {
+	float: none;
+}
+
+}
+
+
+
+/***************************************************************************
+                                < 340px
+***************************************************************************/
+
+@media (max-width: 340px) {
+.nivo-caption .btn {
+ 	display: none !important; 
+}
+.custom_showcase {
+ 	width: 100% !important; 
+}
+
+}

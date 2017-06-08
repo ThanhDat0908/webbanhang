@@ -8,8 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -64,9 +63,8 @@ public class User {
 	public void setFullname(String fullname) {
 		this.fullname = fullname;
 	}
-	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name="birthday")
-	@JsonFormat(pattern="yyyy-MM-dd")
+	@JsonFormat(pattern="dd-mm-yyyy")
 	public Date getBirthday() {
 		return birthday;
 	}
