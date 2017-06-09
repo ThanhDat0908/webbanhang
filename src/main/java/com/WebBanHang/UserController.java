@@ -28,6 +28,10 @@ public class UserController {
 	public ModelAndView homePage() {
 		return new ModelAndView("index");
 	}
+	@RequestMapping(value = "/register", method = RequestMethod.GET, produces = { "application/json;charset=UTF-8" })
+	public ModelAndView regiserPage() {
+		return new ModelAndView("register");
+	}
 	@RequestMapping(value = "/home")
 	@ResponseBody
 	public ModelAndView home(HttpServletRequest request) {
