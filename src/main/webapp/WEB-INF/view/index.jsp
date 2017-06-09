@@ -15,6 +15,8 @@
 	media="all">
 <link href="../resources/css/responsive.css" rel="stylesheet"
 	type="text/css" media="all">
+	<link href="../resources/css/login.css" rel="stylesheet"
+	type="text/css" media="all">
 <link href="../resources/css/font-awesome.css" rel="stylesheet"
 	type="text/css" media="all">
 <link rel="stylesheet"
