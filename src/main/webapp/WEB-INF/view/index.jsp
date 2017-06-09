@@ -264,16 +264,11 @@
 															<div class="product_name">{{product.name}}</div>
 
 															<div class="product_links">
-																<a class="btn"
-																	href="https://tm-shopify090-mobile.myshopify.com/products/apple-iphone-3gs"><i
-																	class="fa fa-info-circle"></i></a>
-
-																<form method="post" action="/cart/add">
+												
+															
 
 
-																	<input name="id" value="834098307" type="hidden">
-
-																	<button class="btn btn-cart" type="submit">
+																	<button class="btn btn-cart btn btn-primary" type="submit">
 																		<i class="fa fa-shopping-cart"></i>
 																	</button>
 
