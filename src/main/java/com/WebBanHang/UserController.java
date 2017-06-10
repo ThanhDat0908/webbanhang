@@ -76,8 +76,15 @@ public class UserController {
 
 	@RequestMapping(value = "/add", method = RequestMethod.POST, produces = { "application/json; charset=UTF-8" })
 	@ResponseBody
-	public void addUser(@RequestBody User user) {
-		userservice.add(user);
+	public boolean addUser(@RequestBody User user) {
+		try {
+			userservice.add(user);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			return false;
+		}
+		return true;
+		
 	}
 
 	@RequestMapping(value = "/update/{id}", method = RequestMethod.PUT, produces = {

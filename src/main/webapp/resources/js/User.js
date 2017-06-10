@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['angularUtils.directives.dirPagination']);
+var app = angular.module('myApp', []);
 
 app.controller('myCtrl', function($scope,$http,$window) {
 	
@@ -17,8 +17,12 @@ app.controller('myCtrl', function($scope,$http,$window) {
                 data    : $scope.user, //forms user object
                 headers : {'Content-Type': 'application/json;charset=UTF-8'} 
 	 	})
-	 	.error(function(data){
-	 			// $scope.messages= "Failed to  Add new user";
+	 	.then(function(response){
+	 			$scope.status=response.data;
+	 			if ($scope.status == false ) {
+	 				$scope.message='Tài khoàn này đã tồn tại !';
+	 			} 
+	 			console.log($scope.status);
 	 	})
 	 };	
 	 //get user into field
