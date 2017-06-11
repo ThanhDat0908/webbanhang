@@ -5,18 +5,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
-<link rel="stylesheet" type="text/css"
-	href="../resources/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css"
-	href="../resources/css/bootstrap-theme.min.css">
-<link rel="stylesheet" type="text/css"
-	href="../resources/css/jquery-ui.min.css">
-<link rel="stylesheet" type="text/css"
-	href="../resources/css/seachbox.css">
-<link rel="stylesheet" type="text/css"
-	href="../resources/css/table.css">
-	<link rel="stylesheet" type="text/css"
-	href="../resources/css/button.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/seachbox.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/table.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/button.css">
+<link href="../resources/css/style.css" rel="stylesheet" type="text/css" media="all">
 <script src="../resources/js/jquery-1.11.3.min.js"></script>
 <script src="../resources/js/jquery-ui.min.js"></script>
 <script src="../resources/js/angular.min.js"></script>
@@ -24,17 +19,33 @@
 <script src="../resources/js/User.js"></script>
 <script src="../resources/js/dropdown.js"></script>
 <script src="../resources/js/dirPagination.js"></script>
+
+<link href="../resources/css/bootstrap.css" rel="stylesheet"
+	type="text/css" media="all">
+<link href="../resources/css/assets.css" rel="stylesheet"
+	type="text/css" media="all">
+<link href="../resources/css/style.css" rel="stylesheet" type="text/css"
+	media="all">
+<link href="../resources/css/responsive.css" rel="stylesheet"
+	type="text/css" media="all">
+	<link href="../resources/css/login.css" rel="stylesheet"
+	type="text/css" media="all">
+<link href="../resources/css/font-awesome.css" rel="stylesheet"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Danh sách Student</title>
+<title>Danh sách User</title>
 
 
 </head>
 
 <body ng-app="myApp" ng-controller="myCtrl">
-<jsp:include page="header.jsp"></jsp:include>
 
-	<div class="container">
+
+	<div class="container" >
 		<!-- Header -->
 		
 		 

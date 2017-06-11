@@ -4,42 +4,43 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<link href="../resources/css/bootstrap.css" rel="stylesheet"
+	type="text/css" media="all">
+<link href="../resources/css/assets.css" rel="stylesheet"
+	type="text/css" media="all">
+<link href="../resources/css/style.css" rel="stylesheet" type="text/css"
+	media="all">
+<link href="../resources/css/responsive.css" rel="stylesheet"
+	type="text/css" media="all">
+	<link href="../resources/css/login.css" rel="stylesheet"
+	type="text/css" media="all">
+<link href="../resources/css/font-awesome.css" rel="stylesheet"
+	type="text/css" media="all">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="../resources/css/css.css" rel="stylesheet" type="text/css">
 
-<link rel="stylesheet" type="text/css"
-	href="../resources/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css"
-	href="../resources/css/bootstrap-theme.min.css">
-<link rel="stylesheet" type="text/css"
-	href="../resources/css/jquery-ui.min.css">
-
-<script src="../resources/js/jquery-1.11.3.min.js"></script>
-<script src="../resources/js/jquery-ui.min.js"></script>
-<script src="../resources/js/angular.min.js"></script>
-<script src="../resources/js/bootstrap.min.js"></script>
-<script src="../resources/js/handleform.js"></script>
-<script src="../resources/js/dropdown.js"></script>
-<script type="text/javascript"
-	src="../resources/js/form-builder.js"></script>
-<script type="text/javascript"
-	src="../resources/js/form-builder-components.js"></script>
-<script type="text/javascript"
-	src="../resources/js/angular-validator.min.js"></script>
-<script type="text/javascript"
-	src="../resources/js/angular-validator-rules.min.js"></script>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>List Form</title>
+<jsp:include page="header.jsp"></jsp:include>
 
 
-</head>
+<script src="../resources/js/bootstrap.js" type="text/javascript"></script>
+<script src="../resources/js/jquery.js" type="text/javascript"></script>
+<script src="../resources/js/angular.min.js" type="text/javascript"></script>
+<script src="../resources/js/cart.js" type="text/javascript"></script>
+
+
 
 <body ng-app="app" ng-controller="DemoController">
-<jsp:include page="header.jsp"></jsp:include>
+
 
 	<div class="container">
 		<!-- Header -->
 		
-		<h1>List student</h1>
+		<h1>Danh sách sản phẩm</h1>
 		<table class="table table-striped">
 			<thead>
 				<tr>

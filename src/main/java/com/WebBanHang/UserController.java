@@ -29,7 +29,7 @@ public class UserController {
 		return new ModelAndView("index");
 	}
 	@RequestMapping(value = "/register", method = RequestMethod.GET, produces = { "application/json;charset=UTF-8" })
-	public ModelAndView regiserPage() {
+	public ModelAndView registerPage() {
 		return new ModelAndView("register");
 	}
 	@RequestMapping(value = "/home")
@@ -40,7 +40,7 @@ public class UserController {
 		if (usersession  !=null && usersession.getRole().equals("admin")) {
 			return new ModelAndView("adminPage");
 		}
-						return new ModelAndView("index");
+						return new ModelAndView("shoppingcart");
 		
 	}
 	@RequestMapping(value = "/admin", method = RequestMethod.GET, produces = { "application/json;charset=UTF-8" })

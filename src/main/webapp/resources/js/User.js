@@ -21,7 +21,9 @@ app.controller('myCtrl', function($scope,$http,$window) {
 	 			$scope.status=response.data;
 	 			if ($scope.status == false ) {
 	 				$scope.message='Tài khoàn này đã tồn tại !';
-	 			} 
+	 			} else{
+	 				$scope.message='Đăng ký thành công !';
+	 			}
 	 			console.log($scope.status);
 	 	})
 	 };	

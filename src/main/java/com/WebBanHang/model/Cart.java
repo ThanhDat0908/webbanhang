@@ -11,20 +11,24 @@ import javax.persistence.Table;
 @Table(name = "cart")
 public class Cart {
 private long productID;
+private String user;
 private int number;
 private String productName;
 private String productImage;
 private int productPrice;
-public Cart(long productID, int number, String productName, String productImage, int productPrice) {
+//****************
+
+public Cart() {
+	super();
+}
+public Cart(long productID, String user, int number, String productName, String productImage, int productPrice) {
 	super();
 	this.productID = productID;
+	this.user = user;
 	this.number = number;
 	this.productName = productName;
 	this.productImage = productImage;
 	this.productPrice = productPrice;
-}
-public Cart() {
-	super();
 }
 @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
@@ -63,6 +67,14 @@ public int getProductPrice() {
 public void setProductPrice(int productPrice) {
 	this.productPrice = productPrice;
 }
+@Column(name="user")
+public String getUser() {
+	return user;
+}
+public void setUser(String user) {
+	this.user = user;
+}
+
 
 
 }
