@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Type;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -64,7 +65,7 @@ public class User {
 		this.fullname = fullname;
 	}
 	@Column(name="birthday")
-	@JsonFormat(pattern="dd-mm-yyyy")
+	@JsonFormat(pattern="yyyy-MM-dd")
 	public Date getBirthday() {
 		return birthday;
 	}

@@ -2,23 +2,44 @@ var app = angular.module('myapp', []);
 	
 app.controller('myCtrl', function($scope,$http,$window) {
 	
-	 $scope.url  = 'http://localhost:8080/WebBanHang/listProduct';
+	 $scope.url  = '/WebBanHang/listProduct';
 	 $http.get($scope.url,{header : {'Content-Type' : 'application/json; charset=UTF-8'}}).then(function(response) {
 	 $scope.arrProduct = response.data;
 	
 	
-	 $scope.saveUser = function() {
-	 	console.log($scope.user);
-	 	$http({
-	 		method: 'POST',
-        		url     : '/WebBanHang/add',
-                data    : $scope.user, //forms user object
-                headers : {'Content-Type': 'application/json;charset=UTF-8'} 
-	 	})
-	 	.success(function(data){
+	 $scope.addCart = function (product) {
+       
+        $scope.product=product;
+       
+        $http({
+            method: 'GET',
+            url: '/WebBanHang/sessionUser'
+             }).then(function successCallback(response) {
+               $scope.sessionUser= response.data;
+               
+      
+        $scope.dataCart={};
+        $scope.dataCart.productID=$scope.product.id;
+        $scope.dataCart.productImage=$scope.product.image;
+        $scope.dataCart.productPrice=$scope.product.price;
+        $scope.dataCart.productPrice=$scope.product.name;
+        $scope.dataCart.user=$scope.sessionUser.fullname;
+        console.log($scope.dataCart);
+        console.log($scope.product);
 
-	 	})
-	 };	
+               $http({
+                 method: 'POST',
+                 url: '/WebBanHang/addCart',
+                 data : $scope.dataCart,
+                  headers : {'Content-Type': 'application/json;charset=UTF-8'} 
+               })
+
+
+           }, function errorCallback(response) {
+        
+        })
+      
+      };	
 	 //get user into field
 	 $scope.selectUser=function(formlist){
 	 	console.log(formlist);	

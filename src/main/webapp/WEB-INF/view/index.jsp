@@ -15,8 +15,7 @@
 	media="all">
 <link href="../resources/css/responsive.css" rel="stylesheet"
 	type="text/css" media="all">
-	<link href="../resources/css/login.css" rel="stylesheet"
-	type="text/css" media="all">
+	<link href="../resources/css/login.css" rel="stylesheet" type="text/css" media="all">
 <link href="../resources/css/font-awesome.css" rel="stylesheet"
 	type="text/css" media="all">
 <link rel="stylesheet"
@@ -25,6 +24,7 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <link href="../resources/css/css.css" rel="stylesheet" type="text/css">
 
 <jsp:include page="header.jsp"></jsp:include>
